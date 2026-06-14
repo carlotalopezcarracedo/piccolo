@@ -7,42 +7,44 @@ import { motion, useScroll, useTransform } from 'motion/react';
 import { useRef } from 'react';
 import { ArrowRight, Phone } from 'lucide-react';
 
+const assetPath = (fileName: string) => `${import.meta.env.BASE_URL}${fileName}`;
+
 const PIZZAS = [
   { 
     name: 'Margherita Verace', 
     price: '11,50', 
     desc: 'La clásica: tomate San Marzano D.O.P., mozzarella di bufala y albahaca fresca.',
-    image: '/margherita.png' 
+    image: assetPath('margherita.png') 
   },
   { 
     name: 'Diavola Piccante', 
     price: '13,50', 
     desc: 'Para los amantes del picante: salame piccante della Calabria y olivas negras.',
-    image: '/diavola.png' 
+    image: assetPath('diavola.png') 
   },
   { 
     name: 'Prosciutto e Funghi', 
     price: '12,50', 
     desc: 'Un equilibrio perfecto de jamón cocido de calidad y champiñones frescos.',
-    image: '/prosciutto.png' 
+    image: assetPath('prosciutto.png') 
   },
   { 
     name: 'Quattro Formaggi', 
     price: '14,00', 
     desc: 'Gorgonzola, Parmigiano, Pecorino y Mozzarella. La intensidad del queso italiano.',
-    image: '/formaggi.png' 
+    image: assetPath('formaggi.png') 
   },
   { 
     name: 'Tartufo e Funghi', 
     price: '16,50', 
     desc: 'La elegancia en mesa: crema de trufa negra, mozzarella y setas de temporada.',
-    image: '/tartufo.png' 
+    image: assetPath('tartufo.png') 
   },
   { 
     name: 'Napoli Speciale', 
     price: '12,00', 
     desc: 'Tradición napolitana con anchoas, alcaparras y un toque de orégano.',
-    image: '/margherita.png' 
+    image: assetPath('margherita.png') 
   },
 ];
 

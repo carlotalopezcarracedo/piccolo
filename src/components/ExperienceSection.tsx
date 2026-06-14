@@ -5,6 +5,8 @@
 
 import { motion } from 'motion/react';
 
+const assetPath = (fileName: string) => `${import.meta.env.BASE_URL}${fileName}`;
+
 export default function ExperienceSection() {
   return (
     <section id="experiencia" className="py-24 md:py-40 bg-ivory relative border-t border-onyx/5">
@@ -21,7 +23,7 @@ export default function ExperienceSection() {
               className="relative aspect-[4/5] overflow-hidden"
             >
               <img 
-                src="/local.png" 
+                src={assetPath('local.png')} 
                 alt="Interior Il Piccolo" 
                 className="w-full h-full object-cover grayscale-[15%]"
               />

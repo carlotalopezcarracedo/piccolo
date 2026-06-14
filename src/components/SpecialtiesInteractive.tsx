@@ -5,27 +5,29 @@
 
 import { motion } from 'motion/react';
 
+const assetPath = (fileName: string) => `${import.meta.env.BASE_URL}${fileName}`;
+
 const specialties = [
   {
     num: '01',
     name: 'Antipasti',
     title: 'Para empezar.',
     desc: 'Bresaola laminada fina, parmesano, calamares fritos y bufala. Platos pensados para abrir mesa y compartir.',
-    image: '/carpaccio.png'
+    image: assetPath('carpaccio.png')
   },
   {
     num: '02',
     name: 'La Pasta',
     title: 'Recetas de siempre.',
     desc: 'Spaghetti carbonara antica y tagliatelle al pesto. Pasta elaborada con paciencia y salsas italianas clásicas.',
-    image: '/pasta.png'
+    image: assetPath('pasta.png')
   },
   {
     num: '03',
     name: 'Il Forno',
     title: 'Pizzas artesanales.',
     desc: 'Amasadas a diario, con tomate italiano y mozzarella. Desde la clásica Margherita a la especialidad de la casa.',
-    image: '/horno.png' 
+    image: assetPath('horno.png') 
   }
 ];
 
