@@ -1,0 +1,6 @@
+{
+  "name": "Il Piccolo",
+  "description": "Web editorial de Il Piccolo, pizzería y ristorante italiano en Pontevedra. Una experiencia gastronómica auténtica con diseño cuidado.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
