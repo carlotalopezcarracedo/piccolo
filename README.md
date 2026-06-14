@@ -8,6 +8,14 @@ This contains everything you need to run your app locally.
 
 View your app in AI Studio: https://ai.studio/apps/bb39da89-735f-4c9b-a3d7-6f660df018c7
 
+## GitHub Pages
+
+This project is configured to deploy from `main` with GitHub Actions.
+
+Public URL: https://carlotalopezcarracedo.github.io/piccolo/
+
+If Pages is not enabled yet in the repository settings, select **GitHub Actions** as the publishing source.
+
 ## Run Locally
 
 **Prerequisites:**  Node.js
