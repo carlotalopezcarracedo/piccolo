@@ -75,7 +75,7 @@ export default function PizzaWheelHero() {
   };
 
   return (
-    <div ref={containerRef} className="relative h-[500vh]">
+    <div ref={containerRef} className="relative h-[420vh]">
       <div className="sticky top-0 h-screen w-full overflow-hidden bg-ivory flex items-center">
         {/* Background Paper Texture Overlay */}
         <div className="absolute inset-0 opacity-[0.05] pointer-events-none grayscale mix-blend-multiply" 
@@ -165,7 +165,7 @@ export default function PizzaWheelHero() {
             </div>
 
             {/* Central Pizza Container */}
-            <div className="relative w-[180vw] h-[180vw] max-w-[800px] max-h-[800px] sm:w-[500px] sm:h-[500px] lg:w-[540px] lg:h-[540px] z-10 flex items-center justify-center translate-y-[25%] md:translate-y-0">
+            <div className="relative w-[180vw] h-[180vw] max-w-[800px] max-h-[800px] sm:w-[500px] sm:h-[500px] lg:w-[540px] lg:h-[540px] z-10 flex items-center justify-center translate-y-[16%] md:translate-y-0">
                {PIZZAS.map((pizza, idx) => {
                  const range = getSafeRange(idx, 0.1);
                  
