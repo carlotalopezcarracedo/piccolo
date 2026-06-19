@@ -74,6 +74,9 @@ export default function PizzaWheelHero() {
     return range;
   };
 
+  const getOpacityValues = (index: number) =>
+    index === 0 ? [1, 1, 1, 0] : [0, 1, 1, 0];
+
   return (
     <div ref={containerRef} className="relative h-[420vh]">
       <div className="sticky top-0 h-screen w-full overflow-hidden bg-ivory flex items-center">
@@ -113,7 +116,7 @@ export default function PizzaWheelHero() {
                         top: 0,
                         left: 0,
                         display: useTransform(scrollYProgress, (v) => v >= start && v < end ? 'block' : 'none'),
-                        opacity: useTransform(scrollYProgress, range, [0, 1, 1, 0])
+                        opacity: useTransform(scrollYProgress, range, getOpacityValues(idx))
                       }}
                     >
                       <h3 className="font-serif text-2xl md:text-3xl font-medium text-onyx mb-1 md:mb-3 italic">{pizza.name}</h3>
@@ -174,7 +177,7 @@ export default function PizzaWheelHero() {
                      key={idx}
                      style={{
                        position: 'absolute',
-                       opacity: useTransform(scrollYProgress, range, [0, 1, 1, 0]),
+                       opacity: useTransform(scrollYProgress, range, getOpacityValues(idx)),
                        // Constant rotation + scroll-based rotation
                        rotate: useTransform(scrollYProgress, [0, 1], [0, 360]), 
                      }}
