@@ -40,12 +40,6 @@ const PIZZAS = [
     desc: 'La elegancia en mesa: crema de trufa negra, mozzarella y setas de temporada.',
     image: assetPath('tartufo.png') 
   },
-  { 
-    name: 'Napoli Speciale', 
-    price: '12,00', 
-    desc: 'Tradición napolitana con anchoas, alcaparras y un toque de orégano.',
-    image: assetPath('margherita.png') 
-  },
 ];
 
 export default function PizzaWheelHero() {
